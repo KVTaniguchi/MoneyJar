@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F63C9C011C54742000F807BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C9C001C54742000F807BD /* AppDelegate.swift */; };
+		F63C9C031C54742000F807BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C9C021C54742000F807BD /* ViewController.swift */; };
+		F63C9C061C54742000F807BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63C9C041C54742000F807BD /* Main.storyboard */; };
+		F63C9C081C54742000F807BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63C9C071C54742000F807BD /* Assets.xcassets */; };
+		F63C9C0B1C54742000F807BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63C9C091C54742000F807BD /* LaunchScreen.storyboard */; };
+		F63C9C101C54742000F807BD /* MoneyJar WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F63C9C0F1C54742000F807BD /* MoneyJar WatchKit App.app */; };
+		F63C9C161C54742000F807BD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63C9C141C54742000F807BD /* Interface.storyboard */; };
+		F63C9C181C54742000F807BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63C9C171C54742000F807BD /* Assets.xcassets */; };
+		F63C9C1F1C54742100F807BD /* MoneyJar WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F63C9C1E1C54742100F807BD /* MoneyJar WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F63C9C241C54742100F807BD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C9C231C54742100F807BD /* InterfaceController.swift */; };
+		F63C9C261C54742100F807BD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C9C251C54742100F807BD /* ExtensionDelegate.swift */; };
+		F63C9C281C54742100F807BD /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C9C271C54742100F807BD /* ComplicationController.swift */; };
+		F63C9C2A1C54742100F807BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63C9C291C54742100F807BD /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F63C9C111C54742000F807BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63C9BF51C54742000F807BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F63C9C0E1C54742000F807BD;
+			remoteInfo = "MoneyJar WatchKit App";
+		};
+		F63C9C201C54742100F807BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63C9BF51C54742000F807BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F63C9C1D1C54742100F807BD;
+			remoteInfo = "MoneyJar WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F63C9C311C54742100F807BD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F63C9C1F1C54742100F807BD /* MoneyJar WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63C9C351C54742100F807BD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F63C9C101C54742000F807BD /* MoneyJar WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F63C9BFD1C54742000F807BD /* MoneyJar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyJar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63C9C001C54742000F807BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F63C9C021C54742000F807BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F63C9C051C54742000F807BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F63C9C071C54742000F807BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F63C9C0A1C54742000F807BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F63C9C0C1C54742000F807BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F63C9C0F1C54742000F807BD /* MoneyJar WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoneyJar WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63C9C151C54742000F807BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F63C9C171C54742000F807BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F63C9C191C54742000F807BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F63C9C1E1C54742100F807BD /* MoneyJar WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MoneyJar WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63C9C231C54742100F807BD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F63C9C251C54742100F807BD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F63C9C271C54742100F807BD /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F63C9C291C54742100F807BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F63C9C2B1C54742100F807BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F63C9BFA1C54742000F807BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63C9C1B1C54742100F807BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F63C9BF41C54742000F807BD = {
+			isa = PBXGroup;
+			children = (
+				F63C9BFF1C54742000F807BD /* MoneyJar */,
+				F63C9C131C54742000F807BD /* MoneyJar WatchKit App */,
+				F63C9C221C54742100F807BD /* MoneyJar WatchKit Extension */,
+				F63C9BFE1C54742000F807BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F63C9BFE1C54742000F807BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F63C9BFD1C54742000F807BD /* MoneyJar.app */,
+				F63C9C0F1C54742000F807BD /* MoneyJar WatchKit App.app */,
+				F63C9C1E1C54742100F807BD /* MoneyJar WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F63C9BFF1C54742000F807BD /* MoneyJar */ = {
+			isa = PBXGroup;
+			children = (
+				F63C9C001C54742000F807BD /* AppDelegate.swift */,
+				F63C9C021C54742000F807BD /* ViewController.swift */,
+				F63C9C041C54742000F807BD /* Main.storyboard */,
+				F63C9C071C54742000F807BD /* Assets.xcassets */,
+				F63C9C091C54742000F807BD /* LaunchScreen.storyboard */,
+				F63C9C0C1C54742000F807BD /* Info.plist */,
+			);
+			path = MoneyJar;
+			sourceTree = "<group>";
+		};
+		F63C9C131C54742000F807BD /* MoneyJar WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F63C9C141C54742000F807BD /* Interface.storyboard */,
+				F63C9C171C54742000F807BD /* Assets.xcassets */,
+				F63C9C191C54742000F807BD /* Info.plist */,
+			);
+			path = "MoneyJar WatchKit App";
+			sourceTree = "<group>";
+		};
+		F63C9C221C54742100F807BD /* MoneyJar WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F63C9C231C54742100F807BD /* InterfaceController.swift */,
+				F63C9C251C54742100F807BD /* ExtensionDelegate.swift */,
+				F63C9C271C54742100F807BD /* ComplicationController.swift */,
+				F63C9C291C54742100F807BD /* Assets.xcassets */,
+				F63C9C2B1C54742100F807BD /* Info.plist */,
+			);
+			path = "MoneyJar WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F63C9BFC1C54742000F807BD /* MoneyJar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F63C9C361C54742100F807BD /* Build configuration list for PBXNativeTarget "MoneyJar" */;
+			buildPhases = (
+				F63C9BF91C54742000F807BD /* Sources */,
+				F63C9BFA1C54742000F807BD /* Frameworks */,
+				F63C9BFB1C54742000F807BD /* Resources */,
+				F63C9C351C54742100F807BD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F63C9C121C54742000F807BD /* PBXTargetDependency */,
+			);
+			name = MoneyJar;
+			productName = MoneyJar;
+			productReference = F63C9BFD1C54742000F807BD /* MoneyJar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F63C9C0E1C54742000F807BD /* MoneyJar WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F63C9C321C54742100F807BD /* Build configuration list for PBXNativeTarget "MoneyJar WatchKit App" */;
+			buildPhases = (
+				F63C9C0D1C54742000F807BD /* Resources */,
+				F63C9C311C54742100F807BD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F63C9C211C54742100F807BD /* PBXTargetDependency */,
+			);
+			name = "MoneyJar WatchKit App";
+			productName = "MoneyJar WatchKit App";
+			productReference = F63C9C0F1C54742000F807BD /* MoneyJar WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F63C9C1D1C54742100F807BD /* MoneyJar WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F63C9C2E1C54742100F807BD /* Build configuration list for PBXNativeTarget "MoneyJar WatchKit Extension" */;
+			buildPhases = (
+				F63C9C1A1C54742100F807BD /* Sources */,
+				F63C9C1B1C54742100F807BD /* Frameworks */,
+				F63C9C1C1C54742100F807BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MoneyJar WatchKit Extension";
+			productName = "MoneyJar WatchKit Extension";
+			productReference = F63C9C1E1C54742100F807BD /* MoneyJar WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F63C9BF51C54742000F807BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Taniguchi;
+				TargetAttributes = {
+					F63C9BFC1C54742000F807BD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F63C9C0E1C54742000F807BD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F63C9C1D1C54742100F807BD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = F63C9BF81C54742000F807BD /* Build configuration list for PBXProject "MoneyJar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F63C9BF41C54742000F807BD;
+			productRefGroup = F63C9BFE1C54742000F807BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F63C9BFC1C54742000F807BD /* MoneyJar */,
+				F63C9C0E1C54742000F807BD /* MoneyJar WatchKit App */,
+				F63C9C1D1C54742100F807BD /* MoneyJar WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F63C9BFB1C54742000F807BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63C9C0B1C54742000F807BD /* LaunchScreen.storyboard in Resources */,
+				F63C9C081C54742000F807BD /* Assets.xcassets in Resources */,
+				F63C9C061C54742000F807BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63C9C0D1C54742000F807BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63C9C181C54742000F807BD /* Assets.xcassets in Resources */,
+				F63C9C161C54742000F807BD /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63C9C1C1C54742100F807BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63C9C2A1C54742100F807BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F63C9BF91C54742000F807BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63C9C031C54742000F807BD /* ViewController.swift in Sources */,
+				F63C9C011C54742000F807BD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63C9C1A1C54742100F807BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63C9C261C54742100F807BD /* ExtensionDelegate.swift in Sources */,
+				F63C9C241C54742100F807BD /* InterfaceController.swift in Sources */,
+				F63C9C281C54742100F807BD /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F63C9C121C54742000F807BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F63C9C0E1C54742000F807BD /* MoneyJar WatchKit App */;
+			targetProxy = F63C9C111C54742000F807BD /* PBXContainerItemProxy */;
+		};
+		F63C9C211C54742100F807BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F63C9C1D1C54742100F807BD /* MoneyJar WatchKit Extension */;
+			targetProxy = F63C9C201C54742100F807BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F63C9C041C54742000F807BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F63C9C051C54742000F807BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F63C9C091C54742000F807BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F63C9C0A1C54742000F807BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F63C9C141C54742000F807BD /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F63C9C151C54742000F807BD /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F63C9C2C1C54742100F807BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F63C9C2D1C54742100F807BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F63C9C2F1C54742100F807BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "MoneyJar WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.MoneyJar.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		F63C9C301C54742100F807BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "MoneyJar WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.MoneyJar.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		F63C9C331C54742100F807BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = MoneyJar_WatchKit_Extension;
+				INFOPLIST_FILE = "MoneyJar WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.MoneyJar.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		F63C9C341C54742100F807BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = MoneyJar_WatchKit_Extension;
+				INFOPLIST_FILE = "MoneyJar WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.MoneyJar.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		F63C9C371C54742100F807BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MoneyJar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.MoneyJar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F63C9C381C54742100F807BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MoneyJar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.MoneyJar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F63C9BF81C54742000F807BD /* Build configuration list for PBXProject "MoneyJar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F63C9C2C1C54742100F807BD /* Debug */,
+				F63C9C2D1C54742100F807BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F63C9C2E1C54742100F807BD /* Build configuration list for PBXNativeTarget "MoneyJar WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F63C9C2F1C54742100F807BD /* Debug */,
+				F63C9C301C54742100F807BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F63C9C321C54742100F807BD /* Build configuration list for PBXNativeTarget "MoneyJar WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F63C9C331C54742100F807BD /* Debug */,
+				F63C9C341C54742100F807BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F63C9C361C54742100F807BD /* Build configuration list for PBXNativeTarget "MoneyJar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F63C9C371C54742100F807BD /* Debug */,
+				F63C9C381C54742100F807BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F63C9BF51C54742000F807BD /* Project object */;
+}
