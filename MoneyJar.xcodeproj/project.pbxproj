@@ -20,6 +20,7 @@
 		F63C9C261C54742100F807BD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C9C251C54742100F807BD /* ExtensionDelegate.swift */; };
 		F63C9C281C54742100F807BD /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C9C271C54742100F807BD /* ComplicationController.swift */; };
 		F63C9C2A1C54742100F807BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63C9C291C54742100F807BD /* Assets.xcassets */; };
+		F64134FA1C5867B900450D6A /* MoneyJarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64134F91C5867B900450D6A /* MoneyJarTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F63C9C1D1C54742100F807BD;
 			remoteInfo = "MoneyJar WatchKit Extension";
+		};
+		F64134FC1C5867B900450D6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63C9BF51C54742000F807BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F63C9BFC1C54742000F807BD;
+			remoteInfo = MoneyJar;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -82,6 +90,9 @@
 		F63C9C271C54742100F807BD /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		F63C9C291C54742100F807BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F63C9C2B1C54742100F807BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F64134F71C5867B900450D6A /* MoneyJarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyJarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64134F91C5867B900450D6A /* MoneyJarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyJarTests.swift; sourceTree = "<group>"; };
+		F64134FB1C5867B900450D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +110,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F64134F41C5867B900450D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -108,6 +126,7 @@
 				F63C9BFF1C54742000F807BD /* MoneyJar */,
 				F63C9C131C54742000F807BD /* MoneyJar WatchKit App */,
 				F63C9C221C54742100F807BD /* MoneyJar WatchKit Extension */,
+				F64134F81C5867B900450D6A /* MoneyJarTests */,
 				F63C9BFE1C54742000F807BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +137,7 @@
 				F63C9BFD1C54742000F807BD /* MoneyJar.app */,
 				F63C9C0F1C54742000F807BD /* MoneyJar WatchKit App.app */,
 				F63C9C1E1C54742100F807BD /* MoneyJar WatchKit Extension.appex */,
+				F64134F71C5867B900450D6A /* MoneyJarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +175,15 @@
 				F63C9C2B1C54742100F807BD /* Info.plist */,
 			);
 			path = "MoneyJar WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F64134F81C5867B900450D6A /* MoneyJarTests */ = {
+			isa = PBXGroup;
+			children = (
+				F64134F91C5867B900450D6A /* MoneyJarTests.swift */,
+				F64134FB1C5867B900450D6A /* Info.plist */,
+			);
+			path = MoneyJarTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +242,24 @@
 			productReference = F63C9C1E1C54742100F807BD /* MoneyJar WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		F64134F61C5867B900450D6A /* MoneyJarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64135001C5867B900450D6A /* Build configuration list for PBXNativeTarget "MoneyJarTests" */;
+			buildPhases = (
+				F64134F31C5867B900450D6A /* Sources */,
+				F64134F41C5867B900450D6A /* Frameworks */,
+				F64134F51C5867B900450D6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F64134FD1C5867B900450D6A /* PBXTargetDependency */,
+			);
+			name = MoneyJarTests;
+			productName = MoneyJarTests;
+			productReference = F64134F71C5867B900450D6A /* MoneyJarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -232,6 +279,10 @@
 					F63C9C1D1C54742100F807BD = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					F64134F61C5867B900450D6A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = F63C9BFC1C54742000F807BD;
+					};
 				};
 			};
 			buildConfigurationList = F63C9BF81C54742000F807BD /* Build configuration list for PBXProject "MoneyJar" */;
@@ -250,6 +301,7 @@
 				F63C9BFC1C54742000F807BD /* MoneyJar */,
 				F63C9C0E1C54742000F807BD /* MoneyJar WatchKit App */,
 				F63C9C1D1C54742100F807BD /* MoneyJar WatchKit Extension */,
+				F64134F61C5867B900450D6A /* MoneyJarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -282,6 +334,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F64134F51C5867B900450D6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -304,6 +363,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F64134F31C5867B900450D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64134FA1C5867B900450D6A /* MoneyJarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -316,6 +383,11 @@
 			isa = PBXTargetDependency;
 			target = F63C9C1D1C54742100F807BD /* MoneyJar WatchKit Extension */;
 			targetProxy = F63C9C201C54742100F807BD /* PBXContainerItemProxy */;
+		};
+		F64134FD1C5867B900450D6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F63C9BFC1C54742000F807BD /* MoneyJar */;
+			targetProxy = F64134FC1C5867B900450D6A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,6 +584,30 @@
 			};
 			name = Release;
 		};
+		F64134FE1C5867B900450D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MoneyJarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uo.MoneyJarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyJar.app/MoneyJar";
+			};
+			name = Debug;
+		};
+		F64134FF1C5867B900450D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MoneyJarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uo.MoneyJarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyJar.app/MoneyJar";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -531,6 +627,7 @@
 				F63C9C301C54742100F807BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F63C9C321C54742100F807BD /* Build configuration list for PBXNativeTarget "MoneyJar WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -539,12 +636,22 @@
 				F63C9C341C54742100F807BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F63C9C361C54742100F807BD /* Build configuration list for PBXNativeTarget "MoneyJar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F63C9C371C54742100F807BD /* Debug */,
 				F63C9C381C54742100F807BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64135001C5867B900450D6A /* Build configuration list for PBXNativeTarget "MoneyJarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64134FE1C5867B900450D6A /* Debug */,
+				F64134FF1C5867B900450D6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
